@@ -1,0 +1,146 @@
+.info {
+  display: flex;
+}
+
+.info__info-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__info-left {
+  background-image: url(../img/Rectangle\ 2.jpg);
+  background-size: cover;
+  /* background-size: 868px 622px; */
+  min-height: 622px;
+  min-width: 864px;
+  background-repeat: no-repeat;
+  display:flex;
+}
+
+.left-block {
+  align-self: flex-end;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+.left-block__text {
+  font-size: 16px;
+  line-height: 32px;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #FFFFFF;
+  font-weight: 700;
+
+}
+
+.left-block__buttom {
+  background-color: Transparent;
+  border: 3px solid #FF9900;
+  padding: 0px 35px 0px 35px;
+  height: 60px;
+  line-height: 20px;
+  font-size: 16px;
+  color: #FFFFFF;
+  position: static;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  margin-top: 66px;
+  margin-bottom: 58px;
+  margin-right: 46px;
+  margin-left: 140px;
+  font-weight: 700;
+}
+
+.left-block__buttom:hover {
+  background-color: #F7B045;
+  border: 3px solid #F7B045;
+}
+
+.left-block__buttom:active {
+  background-color: #E1670E;
+  border: 3px solid #E1670E;
+}
+
+.info__info-right{
+  margin-left: 32px;
+}
+.right-block {
+  border: 1px solid #CACACA;
+}
+
+.right-block-top {
+  margin-bottom: 30px;
+}
+
+.right-block__text{
+  padding-top: 57px;
+  padding-right: 118px;
+  padding-bottom: 66px;
+  height: 295px;
+}
+
+.right-block__main-text{
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+}
+.right-block__text{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2;
+  margin-left: 299px;
+  width: 570px;
+}
+
+.right-block-top{
+  background-image: url(../img/Frame\ 16.png);
+  background-repeat: no-repeat;
+  background-position-y: 64px;
+    background-position-x: 59px;
+}
+
+.right-block-buttom{
+  background-image: url(../img/Frame\ 12.png);
+  background-repeat: no-repeat;
+  background-position-y: 64px;
+    background-position-x: 59px;
+}
+
+.about-us-text__text {
+  margin-bottom: 48px;
+}
+
+@media (max-width: 1024px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+  .info__info-right{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+  .info__info-left {
+    margin-bottom: 30px;
+    background-image: url(../img/stoitel.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+  }
+
+  .left-block__text {
+    font-weight: bold;
+    font-style: normal;
+  }
+  .right-block__text{
+    margin-right: 0px;
+  }
+
+  .left-block__buttom {
+    margin-left: 187px;
+    margin-right: 57px;
+
+  }
+
+}

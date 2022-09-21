@@ -1,0 +1,131 @@
+.main__section-work {
+  margin-bottom: 96px;
+}
+
+.step-list {
+  margin-top: 46px;
+  display: flex;
+  padding-left: none;
+  list-style-position:inside;
+  margin-bottom: 45px;
+}
+
+.step-list__item:not(:last-child){
+  margin-right: 81px;
+}
+
+.step-list__item{
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: normal;
+}
+
+.step-list__btn-active {
+  color: #FF9900;
+  border: 2px solid transparent;
+}
+
+.step-list__btn{
+  border: solid 2px transparent;
+  padding-left: 0;
+  padding-right: 0;
+  background-color:  #FFFFFF;
+}
+.step-list__btn:hover{
+  color: #FF9900;
+}
+
+.step-list__btn:focus{
+  border-color: #FF9900;
+}
+
+.step-list__btn:active{
+  color: #E1670E;
+  border: solid 2px transparent;
+}
+.step-list__btn{
+  border: solid 2px transparent;
+  padding-left: 0;
+  padding-right: 0;
+  background-color:  #FFFFFF;
+}
+
+.step-work__heading{
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+
+.step-work__text {
+  font-size: 16px;
+  line-height: 32px;
+  max-width: 775px;
+}
+
+.step-work{
+  display: flex;
+}
+
+.step-work::after{
+  content: "";
+  background-image: url(../img/Rectangle\ 18.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+
+  margin-top: 8px;
+}
+
+.step-work__left {
+  margin-right: 126px;
+}
+
+.step-work-left__left-button {
+  background: #FF9900;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 24px 38px 19px;
+  height: 62px;
+  border: none;
+  margin-right: 28px;
+  font-weight: 700;
+}
+
+.step-work-left__left-button:hover {
+  background-color: #F7B045;
+}
+
+.step-work-left__left-button:active {
+  background-color: #E1670E;
+}
+.step-work-left__right-button  {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  height: 55px;
+  padding: 24px 37px 19px;
+  border: 1px solid black;
+  background-color:  #FFFFFF;
+}
+.step-work-left__right-button:hover {
+  background-color: #666666;
+  color: #FFFFFF;
+}
+
+.step-work-left__right-button:active {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.step-work-left__btn {
+  margin-top: 70px;
+}
+
+@media (max-width: 1024px) {
+  .step-work::after {
+    background-image: url(../img/step_work.jpg);
+  }
+}

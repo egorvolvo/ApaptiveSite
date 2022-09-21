@@ -1,0 +1,262 @@
+.header {
+  padding-top: 35px;
+  padding-bottom: 15px;
+}
+.header-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__main-logo_vis {
+  display: none;
+}
+.hamburger-menu {
+  display: none;
+  width: 30px;
+}
+ #menu__toggle {
+  opacity: 0;
+}
+
+.menu__btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  position:absolute;
+  top: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.close {
+  position: absolute;
+  right: 32px;
+  top: 11px;
+  width: 32px;
+  height: 32px;
+  right: 81%;
+  background-color: #fff;
+  border: none;
+  }
+
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 29px;
+  width: 2px;
+  background-color: #333;
+  }
+.close:before {
+  transform: rotate(45deg);
+  }
+.close:after {
+  transform: rotate(-45deg);
+  }
+
+.burger-text {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  }
+.nav-header-list {
+  display: flex;
+  padding-left: 0;
+}
+
+.nav-header-list__item:not(:last-child) {
+  margin-right: 82px;
+}
+
+.nav-header-list__item {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+
+}
+.nav-header-list__item-uikit {
+  border: solid 2px transparent;
+}
+.nav-header-list__item-uikit:hover {
+  border-bottom: solid 2px #FF9900;
+}
+
+.nav-header-list__item-uikit:focus {
+  border: solid 2px #FF9900;
+  color: #333333;
+}
+
+.nav-header-list__item-uikit:active{
+  border-left: solid 2px transparent;
+  border-right: solid 2px transparent;
+  border-top: solid 2px transparent;
+  border-bottom: solid 2px #E1670E;
+  color:#E1670E ;
+}
+
+ .search {
+  background-image: url(../img/status=default.svg);
+  background-repeat: no-repeat;
+  background-position-x: 2px;
+  background-position-y: 2px;
+  width: 25px;
+  height: 25px;
+  border: solid 2px transparent;
+  margin-left: 79px;
+  background-color: #fff;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.search:hover {
+  background-image: url(../img/status=hover.png);
+}
+.search:focus {
+  background-image: url(../img/status=default.svg);
+  background-repeat: no-repeat;
+  border: solid 2px #FF9900;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+}
+
+.header__main-logo_320{
+  display: none;
+}
+
+.menu.is-active {
+  transform: none;
+}
+.menu {
+  position:absolute;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 342px;
+  padding: 40px;
+  padding-bottom: 233px;
+  height: 100%;
+  background-color: rgb(252, 253, 253);
+  transition: transform .3s ease-in-out;
+  transform: translateX(-101%);
+}
+
+.burger-text li {
+  margin-bottom: 58px;
+  line-height: 29px;
+  color: #333333;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* MEDIA */
+@media (max-width: 1224px) {
+  .nav-header-list__item:not(:last-child){
+  margin-right: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .nav-header-list {
+    display: none;
+  }
+
+  .header {
+   padding-top: 22px;
+   padding-bottom: 25px;
+  }
+  .header__main-logo{
+    display: none;
+  }
+  .header__main-logo_vis{
+    display: block;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .header-row {
+    justify-content: space-between;
+  }
+
+  .header__main-logo {
+    padding: 0;
+    width: 170px;
+    height: 48px;
+  }
+
+  .search {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-top: 8px;
+    padding-bottom: 10px;
+  }
+
+  .header__main-logo {
+    max-width: 150px;
+  }
+  .menu__btn {
+    top: 15px;
+  }
+}
+@media (max-width:600px){
+  .main-text-payment {
+    font-size: 25px;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 457px) {
+
+  .header {
+    padding-bottom: 18px;
+  }
+  .header__main-logo{
+    display: none;
+  }
+  .header__main-logo_vis{
+    display: none;
+  }
+
+  .header__main-logo_320 {
+    display: block;
+  }
+  .logo {
+    width: 110px;
+  }
+  .search  {
+    background-position: center;
+  }
+  .header__main-logo {
+    width: 110px;
+    height: 35px;
+  }
+}

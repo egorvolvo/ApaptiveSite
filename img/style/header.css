@@ -1,0 +1,132 @@
+.header {
+  padding-top: 35px;
+  padding-bottom: 15px;
+}
+
+.header-row {
+  /* height: 99px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.burger {
+  display: none;
+  width: 30px;
+}
+.burger-btn {
+  position: absolute;
+width: 30px;
+height: 3px;
+display: none;
+}
+.header__main-logo {
+  /* background-image: url(/img/Логотип); */
+}
+
+
+.nav-header-list {
+  display: flex;
+  padding-left: none;
+}
+
+.nav-header-list__item:not(:last-child) {
+  margin-right: 82px;
+}
+.nav-header {
+  /* margin-left: 729px; */
+
+}
+
+.nav-header-list__item {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+
+}
+.nav-header-list__item-uikit {
+  border: solid 2px transparent;
+}
+.nav-header-list__item-uikit:hover {
+  border-bottom: solid 2px #FF9900;
+}
+
+.nav-header-list__item-uikit:focus {
+  border: solid 2px #FF9900;
+  color: #333333;
+}
+
+.nav-header-list__item-uikit:active{
+  border-left: solid 2px transparent;
+  border-right: solid 2px transparent;
+  border-top: solid 2px transparent;
+  border-bottom: solid 2px #E1670E;
+  color:#E1670E ;
+}
+
+ .search {
+  background-image: url(../img/status=default.svg);
+  background-repeat: no-repeat;
+  background-position-x: 2px;
+  background-position-y: 2px;
+
+  /* margin-left: 71px; */
+  width: 25px;
+  height: 25px;
+  border: solid 2px transparent;
+  padding: 14px;
+  margin-left: 79px;
+  background-color: #fff;
+}
+.search:hover {
+  background-image: url(../img/status=hover.png);
+}
+.search:focus {
+  background-image: url(../img/status=default.svg);
+  background-repeat: no-repeat;
+  border: solid 2px #FF9900;
+  /* background-position-x: 2px;
+  background-position-y: 2px; */
+  /* background-position: center; */
+}
+
+
+.nav-header {
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  width: 570px;
+}
+
+
+/* MEDIA */
+
+@media (max-width: 1024px) {
+  .nav-header-list {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burger-btn{
+    display: block;
+  }
+  .header-row {
+    justify-content: space-between;
+  }
+
+  .header__main-logo {
+    padding: 0;
+    width: 170px;
+    height: 48px;
+  }
+
+  .search {
+    margin-left: 0;
+  }
+}

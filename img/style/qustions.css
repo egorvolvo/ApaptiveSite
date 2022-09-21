@@ -1,0 +1,74 @@
+
+.qustions {
+  margin-top: 8px;
+}
+
+.qustions__btn {
+  /* font-size: 24px;
+  line-height: 32px;
+  font-weight: 700; */
+  padding-top: 39px;
+  padding-bottom: 38px;
+  background-image: url(../img/+х.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 100%;
+  text-align: left;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid #CACACA;
+  border-left: none;
+  border-right: none;
+  background-size: 50px 50px;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: transparent;
+}
+
+.qustions__item:first-child .qustions__btn {
+  border-top-color: #cacaca;
+}
+
+.qustions__item:first-child .qustions__btn:hover {
+  border-color: #FF9900;
+}
+
+.qustions__btn:hover {
+  border-bottom: 2px solid #FF9900;
+  border-top: 2px solid #FF9900;
+  color: #FF9900;
+  background-image: url(../img/yellow.svg);
+  padding-right: 2px;
+}
+
+.qustions__btn:focus {
+  border-bottom: 2px solid #FF9900;
+  border-top: 2px solid #FF9900;
+  color: #FF9900;
+  background-image: url(../img/yellow.svg);
+}
+.qustions__item {
+  margin-top: -2px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+
+.qustions__list {
+  margin-top: 42px;
+  margin-bottom: 0;
+}
+
+.qustions__btn-last {
+  border-bottom: 2px solid #CACACA;
+}
+
+.qustions__btn-last:hover {
+  border-bottom: 2px solid #FF9900;
+}
+
+@media (max-width: 1024px) {
+  .qustions__item {
+    font-size: 20px;
+  }
+}

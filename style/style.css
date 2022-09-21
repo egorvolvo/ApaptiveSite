@@ -1,0 +1,167 @@
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  background-color:   #FFFFFF;  /* под проект */
+  font-family: "Montserrat";  /* в "" свой шрифт под проект*/
+  font-size: 16px;
+  /* font-weight: 400; */
+  color: black;
+  line-height: 1;
+  width: 100%;
+}
+
+button, input {
+  font: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+ol, ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+
+/* container */
+
+
+.container {
+  max-width: 1920px;  /*под проект/ ИЗМЕНИЛ*/
+  padding: 0 75px 0 75px;
+  margin: 0 auto;
+}
+
+.container:first-child {
+  max-width: 1920px;  /*под проект/ ИЗМЕНИЛ*/
+  padding: 0 75px 0 75px;
+  margin: 0 auto;
+}
+
+.container-footer{
+  padding: 0 77px 0 74px;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+section:first-child{
+  padding-top: 0;
+}
+section {
+ padding: 51px 0 50px 0;
+}
+
+.new_section {
+padding-bottom: 55px;
+}
+
+/* при работе с float */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.slip_1024{
+  display: none;
+}
+.slip_728  {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .container:first-child {
+    max-width: 1024px;  /*под проект/ ИЗМЕНИЛ*/
+    padding: 0 50px 0 50px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 44px 0 38px 0;
+   }
+   .new_section {
+     padding-bottom: 40px ;
+   }
+   .new_new_section {
+     padding-bottom: 50px;
+   }
+   .container-footer {
+    max-width: 1024px;
+    padding: 0 50px 0 47px;
+    margin: 0 auto;
+   }
+}
+
+@media (max-width: 768px) {
+  .container:first-child {
+    max-width: 768px;  /*под проект/ ИЗМЕНИЛ*/
+    padding: 0 50px 0 50px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 42px 0 40px 0;
+   }
+   .container-footer {
+    max-width: 1024px;
+    padding: 0 50px 0 50px;
+    margin: 0 auto;
+    text-align: center;
+   }
+
+}
+
+@media (max-width: 320px) {
+  .container:first-child {
+    max-width: 320px;  /*под проект/ ИЗМЕНИЛ*/
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 31px 0 30px 0;
+   }
+  .new_section {
+    padding-bottom: 0px;
+  }
+  .container-footer {
+    max-width: 290px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+    text-align: center;
+
+   }
+
+}

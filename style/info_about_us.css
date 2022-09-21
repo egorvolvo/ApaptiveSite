@@ -1,0 +1,66 @@
+.heading-text {
+  color: #333333;
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 59px;
+  margin-right: 2px;
+}
+
+.text {
+  color: #333333;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.about-us-text {
+  width: 1235px;
+  margin-top: 17px
+}
+
+.about-us-text__text {
+  margin-bottom: 48px;
+}
+
+@media (max-width: 1440px) {
+  .about-us-text {
+    width: 100%
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-us-text {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .about-us-text__text {
+    margin-bottom: 62px;
+  }
+  .text {
+    font-style: normal;
+    font-weight: normal;
+  }
+
+}
+
+@media (max-width:600px) {
+  .heading-text {
+    font-size: 25px;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 457px) {
+  .heading-text {
+    font-size: 24px;
+    line-height: 29px;
+    }
+  .about-us-text__text {
+    font-size: 14px;
+    line-height: 28px;
+    }
+
+  .about-us-text{
+    margin-top: 19px;
+    }
+}

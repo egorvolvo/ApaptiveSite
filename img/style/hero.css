@@ -1,0 +1,76 @@
+.payment-block {
+  background: url("../img/low-angle-photo-of-balconies-2462015\ 1.jpg")  no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.payment-block__small {
+  padding: 105px 853px 101px 81px;
+}
+
+.main-text-payment {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 85px;
+  margin-bottom: 21px;
+}
+
+.text-payment {
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 29.26px;
+  font-size: 24px;
+}
+
+
+
+.payment-btn {
+  margin-top: 89px;
+  padding: 25px 37px 24px 37px;
+  background-color: #FF9900;
+  text-align: center;
+  font-weight: bold;
+  font-size: 23.4581px;
+  line-height: 29px;;
+  color: #FFFFFF;
+  border: none;
+}
+
+.payment-btn:hover {
+  background-color: #F7B045;
+}
+
+.payment-btn:active {
+ background-color: #E1670E
+ ;
+}
+
+@media (max-width: 1024px) {
+  .payment-block {
+   background: url(../img/hero_two.jpg) no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 100%;
+  }
+  .payment-block__small {
+    padding: 160px 77px 160px 77px;
+  }
+
+  .main-text-payment{
+    font-size: 60px;
+    line-height: 73px;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  .text-payment  {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .payment-btn {
+    margin-top: 60px;
+  }
+}

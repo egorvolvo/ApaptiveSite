@@ -1,0 +1,198 @@
+
+
+.test {
+  width: 100%;
+  min-height: 560px;
+  position: relative;
+  }
+.swiper-pagination {
+  margin-bottom: 30px;
+
+  }
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+  }
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-right: 20px;
+  }
+.swiper-pagination-bullet-active {
+  background-color: #FFFFFF;
+  }
+.slider-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+
+}
+
+.box {
+  position: relative;
+  z-index: 2;
+}
+
+.payment-block__small {
+  padding: 105px 81px 103px;
+  max-width: 855px;
+}
+
+.main-text-payment {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 85px;
+  margin-bottom: 21px;
+}
+
+.text-payment {
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 29.26px;
+  font-size: 24px;
+}
+
+.payment-btn {
+  margin-top: 89px;
+  padding: 25px 37px 24px 37px;
+  background-color: #FF9900;
+  text-align: center;
+  font-weight: bold;
+  font-size: 23.4581px;
+  line-height: 29px;;
+  color: #FFFFFF;
+  border: none;
+}
+
+.payment-btn:focus {
+  outline: 2px solid white;
+
+}
+
+.payment-btn:hover {
+  background-color: #F7B045;
+}
+
+.payment-btn:active {
+ background-color: #E1670E
+ ;
+}
+
+@media (max-width: 1024px) {
+  .swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+  }
+
+  .test {
+    min-height: 100%;
+  }
+  .payment-block {
+    background: url(../img/hero_two.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .payment-block__small {
+    padding: 165px 77px 160px 77px;
+  }
+
+  .main-text-payment{
+    font-size: 60px;
+    line-height: 73px;
+    font-weight: 800;
+    font-style: normal;
+    margin-bottom: 12px;
+  }
+
+  .text-payment  {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .payment-btn {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .payment-block {
+    background: url(../img/hero_3.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+   }
+   .payment-block__small {
+    padding: 163px 40px 160px 40px;
+  }
+
+  .text-payment {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .main-text-payment{
+    font-size: 50px;
+    line-height: 61px;
+    font-weight: 800;
+    font-style: normal;
+    margin-bottom: 14px;
+  }
+}
+@media (max-width: 457px) {
+  .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+  }
+  .test {
+    max-height: 100%;
+  }
+  .main-text-payment {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .payment-block__small {
+    padding: 60px 21px 60px 21px;
+  }
+  .text-payment {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .payment-btn {
+    display: block;
+    padding: 0px 28px;
+    font-size: 12px;
+    line-height: 15px;
+    margin: auto;
+    height: 40px;
+    }
+  }
